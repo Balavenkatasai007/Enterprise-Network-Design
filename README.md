@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project demonstrates the design and implementation of an enterprise network in Cisco Packet Tracer. The network is divided into multiple departments using VLANs to improve organization and reduce unnecessary broadcast traffic. Router-on-a-Stick is used to enable communication between different VLANs, while DHCP and DHCP Relay are configured to automate IP address assignment across the network.
+This project demonstrates the design and implementation of an enterprise network using Cisco Packet Tracer. The network is divided into three departments using VLANs to improve security and network management. Router-on-a-Stick is used for Inter-VLAN Routing, while DHCP, DHCP Relay, and DNS services provide automatic IP address assignment and name resolution across the network.
 
 ## Technologies Used
 
@@ -19,7 +19,7 @@ This project demonstrates the design and implementation of an enterprise network
 The network consists of:
 
 - One Router
-- One Switch
+- One Layer 2 Switch
 - Six PCs
 - One Printer
 - One Server
@@ -35,46 +35,57 @@ The departments are separated into the following VLANs:
 ## Project Features
 
 - VLAN Segmentation
-- Access and Trunk Port Configuration
-- Inter-VLAN Routing
+- Access Port Configuration
+- Trunk Port Configuration
 - Router-on-a-Stick Configuration
+- Inter-VLAN Routing
 - DHCP Configuration
-- DHCP Relay using `ip helper-address`
+- DHCP Relay using ip helper-address
 - DNS Configuration
 - End-to-End Connectivity Testing
 
-## Screenshots
+## Network Topology
 
-### Network Topology
+![Network Topology](Topology.jpeg)
 
-![Topology](Topology.jpeg)
+## VLAN Configuration
 
-### VLAN Configuration
+![VLAN Table](VLAN_table.jpeg)
 
-![VLAN](VLAN.jpeg)
+## Trunk Configuration
 
-### Router Subinterfaces
+![Trunk Configuration](Trunk.jpeg)
 
-![Router](Router_Subinterfaces.jpeg)
+## Router Subinterfaces
 
-### DHCP Configuration
+![Router Subinterfaces](Router_Subinterfaces.jpeg)
 
-![DHCP](DHCP.jpeg)
+## Running Configuration
 
-### Connectivity Testing
+![Running Configuration](Running_configuration.jpeg)
 
-![Ping](Ping_Test.jpeg)
+## DHCP Pools
 
-## Files Included
+![DHCP Pools](DHCP_Pools.jpeg)
+
+## Automatic DHCP Configuration
+
+![Automatic DHCP](Automatic_DHCP.jpeg)
+
+## Connectivity Testing
+
+![Ping Test](Ping_Test.jpeg)
+
+## Repository Files
 
 - Enterprise Office Network.pkt
-- Project_Report.pdf
-- Router_Config.txt.txt
-- Switch_Config.txt.txt
+- Enterprise_Network_Design_using_Cisco_Packet_Tracer.pdf
+- Router_Config.txt
+- Switch_Config.txt
 
 ## What I Learned
 
-Working on this project helped me gain practical experience with VLAN segmentation, trunk port configuration, Router-on-a-Stick, DHCP, DHCP Relay, and basic enterprise network troubleshooting. It also improved my understanding of how different network components work together in a real-world environment.
+Through this project, I gained practical experience in designing and configuring an enterprise network using Cisco Packet Tracer. I learned how to implement VLANs, configure trunk ports, perform Inter-VLAN Routing using Router-on-a-Stick, deploy DHCP with DHCP Relay, configure DNS, and verify network connectivity through troubleshooting and testing.
 
 ## Author
 
